@@ -2,7 +2,7 @@ nav div ul button {
     background-color: #fff3da;
   }
   nav div ul button:hover {
-    background-color: #543A14;
+    background-color: #29A6B8;
     transition: all 0.45s ease-in-out;
     color: white;
   }
