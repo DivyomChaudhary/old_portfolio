@@ -1,0 +1,53 @@
+
+@keyframes pulse-border{
+    0%{
+        transform: scale(1);
+        opacity: 0.2;
+    }
+    100%{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInMain{
+    from { left: 0px; }
+    to { left: 15rem; }
+}
+
+@keyframes slideIn-1{
+    from { left: 0px; }
+    to { left: 7rem; }
+}
+
+@keyframes slideIn-2{
+    from { left: 0px; }
+    to { left: 9rem; }
+}
+
+@keyframes slideIn-3{
+    from { left: 0px; }
+    to { left: 11rem; }
+}
+
+@media (min-width: 800px){
+    @keyframes slideInMain{
+        from { left: 0px; }
+        to { left: 25rem; }
+    }
+    
+    @keyframes slideIn-1{
+        from { left: 0px; }
+        to { left: 13rem; }
+    }
+    
+    @keyframes slideIn-2{
+        from { left: 0px; }
+        to { left: 17rem; }
+    }
+    
+    @keyframes slideIn-3{
+        from { left: 0px; }
+        to { left: 21rem; }
+    }
+}

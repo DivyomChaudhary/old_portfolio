@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio-scss</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/normstyles.css">
+    <link rel="stylesheet" href="/scss/sections/_tech-stack.scss">
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--  ? Emailjs -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">(function(){
+    emailjs.init({
+    publicKey: "sxs08syivmuYSU--d",
+    });
+    })();
+  </script>
+
+  </head>
+  <body>
+
+    <!--  ? Navbar  -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="/images/Logo.png"
+            alt="Logo"
+            height="40"
+            width="40"
+            style="mix-blend-mode: screen; border-radius: 50%"
+          />
+          My Folio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonials">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+              
+            <button type="button" class="btn-primary rounded-pill" id="contact-down">
+              @ Contact me
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ? Intro section  -->
+
+    <section id="home" class="intro-section">
+      <div class="container">
+        <div class="row align-items-center text-white d-flex" style="flex-wrap: wrap;">
+          <div class="col-md-6 intros">
+            <h1 class="display-2">
+              <span class="display-2--intro"
+                >Welcome, I'm Divyom Chaudhary</span
+              >
+              <span class="display-2--description lh-base mb-3">
+                Welcome to my online portfolio. Here you'll find a selection of my work, information about my background and skills, and ways to connect with me.  I invite you to explore my projects and learn more about what I do.
+              </span>
+            </h1>
+            <div class="reach-out">
+            <a href="https://linktr.ee/Divyom_Chaudhary" role="button" class="btn-rounded rounded-pill">
+              Reach out
+              <span><i class="fas fa-arrow-right fa-beat"></i></span>
+            </a>
+          </div>
+          </div>
+
+          <!-- ? Animate content -->
+
+          <div class="col-md-6 intros ">
+            <div class="animation-box bg-dark text-white" style="border-radius: 5%; box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);"
+                alt="DC"
+                class="img-fluid"
+                id="myAnimation">
+
+                <!-- ? Start the animation -->
+
+                <div class="pt-4">
+                <div class="gliding-text-1 gliding-text animate">Cloud</div>
+              
+                <div class="gliding-text-2 gliding-text animate">Design</div>
+              
+                <div class="gliding-text-3 gliding-text animate">Develop</div>
+              
+                <div class="gliding-text-4 gliding-text animate">DC.</div>
+              
+                <div class="gliding-text-5 gliding-text animate">Inspire</div>
+              
+                <div class="gliding-text-6 gliding-text animate">Animate</div>
+              
+                <div class="gliding-text-7 gliding-text animate">Secure</div>
+              </div>
+              <!--// <a href="#"class="position-absolute top-50 start-50 translate-middle"><span><i class="fas fa-play-circle"></i></span></a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#fff3da"
+          fill-opacity="1"
+          d="M0,128L26.7,138.7C53.3,149,107,171,160,176C213.3,181,267,171,320,149.3C373.3,128,427,96,480,106.7C533.3,117,587,171,640,197.3C693.3,224,747,224,800,186.7C853.3,149,907,75,960,48C1013.3,21,1067,43,1120,53.3C1173.3,64,1227,64,1280,64C1333.3,64,1387,64,1413,64L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"
+        ></path>
+      </svg>
+      <!-- // glightbox -->
+    </section>
+
+    <!-- ? Tech Stack -->
+
+    <section id="companies" class="companies"><div id="fixed-header">
+      <div class="container">
+          <div class="row text-center">
+              <h4 class="fw-bold lead">Tech Stacks used</h4>
+              <div class="heading-line mb-5"></div>
+          </div>
+      </div>
+  </div>
+  
+  <div class="container" id="content-container">
+      <section id="companies" class="companies">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="companies__logo-box shadow-sm">
+                          <img src="images/Tech stack/bootstrap.png" alt="Bootstrap" title="Bootstrap" class="img-fluid" />
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="companies__logo-box shadow-sm">
+                          <img src="images/Tech stack/Sass.svg" alt="Scss" title="Scss" class="img-fluid" />
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="companies__logo-box shadow-sm">
+                          <img src="images/Tech stack/HTML5.svg" alt="HTML5" title="HTML5" class="img-fluid" />
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="companies__logo-box shadow-sm">
+                          <img src="images/Tech stack/css-new.png" alt="CSS3" title="CSS3" class="img-fluid" style="mix-blend-mode: multiply" />
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="companies__logo-box shadow-sm">
+                          <img src="images/Tech stack/js.png" alt="JavaScript" title="JavaScript" class="img-fluid" />
+                      </div>
+                  </div>
+                  <div class="col-md-4">
+                      <div class="companies__logo-box shadow-sm">
+                          <img src="images/Tech stack/nodejs.svg" alt="Node" title="Node" class="img-fluid" />
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <div class="text-center">
+        <button type="button" id="switch-button" class="btn-rounded rounded-pill border-primary">
+          Visualize Tech stack
+          <span><i class="fa-solid fa-magnifying-glass-chart fa-bounce"></i></span>
+        </button>
+    </div>
+  </div>
+  
+  <div class="container" data-bs-theme="dark" id="progress-container">
+      <div class="progress mb-2" role="progressbar" aria-label="Bootstrap" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-purple" style="width: 85%">Bootstrap</div>
+      </div>
+      <div class="progress mb-2" role="progressbar" aria-label="SCSS" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-pink" style="width: 75%">SCSS</div>
+      </div>
+      <div class="progress mb-2" role="progressbar" aria-label="CSS" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-blue" style="width: 70%">CSS</div>
+      </div>
+      <div class="progress mb-2" role="progressbar" aria-label="JS" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-yellow text-dark" style="width: 30%">JavaScript</div>
+      </div>
+      <div class="progress mb-5" role="progressbar" aria-label="Nodejs" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar bg-dark text-green" style="width: 10%">Node packages</div>
+    </div>
+      <button type="button" id="back-button" class="btn-rounded rounded-pill border-primary bg-primary mt-2 mb-5">Back to Content
+        <span><i class="fas fa-arrow-left"></i></span>
+      </button>
+  </div>
+</section>
+
+    <!-- ? Services -->
+
+    <section id="services" class="services pt-large">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold text-center">Services</h1>
+          <div class="heading-line mb-5"></div>
+        </div>
+      
+          <!-- ? Description starts -->
+
+        <div class="row pt-2 pb-2 mt-0 mb-3">
+          <div class="col-md-6 border-right">
+            <div class="bg-white p-3">
+              <div class="h2 fw-bold text-capitalize text-center">
+                Services range from initial creative design to faster deployment
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="bg-white p-4 text-start">
+              <p class="fw-light">
+                I work closely with clients, collaborating throughout the entire process, from initial creative concepts to final deployment.  My services include Design to Development lifecycle, and I'm always open to discussing custom solutions tailored to your specific needs.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ? Content -->
+        <div class="container">
+          <!-- ? Web development -->
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+              <div class="services__content">
+                <div class="icon fas d-b fa-code"></div>
+                <h3 class="display-3--title mt-1">
+                  &nbsp;Web Development
+                </h3>
+                <p class="lh-lg">
+                  My services cover the entire project lifecycle, ensuring a smooth and seamless experience. From the initial creative brainstorming and design phase, where we develop a strong visual identity and user experience, to the development and deployment stage, where I prioritize speed and efficiency, I'm here to bring your vision to life.
+                </p>
+                <a href="#contact" role="button" class="btn-rounded rounded-pill border-primary">
+                  Find out more
+                  <span><i class="fas fa-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+              <div class="services__pic">
+                <img src="/images/services/Web Development.png" alt="Web Dev Illustration" class="img-fluid">
+              </div>
+            </div>
+          </div>
+          <!-- ? Design -->
+        
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start pt-0">
+              <div class="services__pic">
+                <img src="/images/services/Landing Page.png" alt="UI/UX Illustration" class="img-fluid">
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+              <div class="services__content"><div class="icon fas d-b fa-palette"></div>
+                <h3 class="display-3--title mt-1">
+                  &nbsp;Design
+                </h3>
+                <p class="lh-lg">
+                  I understand the importance of speed in today's fast-paced world. My services are designed to deliver results quickly and efficiently, without compromising on quality. I make use of streamlined processes starting from wireframing to theming.
+                </p>
+                <a href="#contact" role="button" class="btn-rounded rounded-pill border-primary">
+                Find out more
+                <span><i class="fas fa-arrow-right"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- ? Cloud Migration and Solutions -->
+          
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+              <div class="services__content"><div class="icon fas d-b fa-cloud"></div>
+              <h3 class="display-3--title mt-1 text-center">
+                &nbsp;Cloud migration and solutions
+              </h3>
+              <p class="lh-lg">
+                We partner with you to understand your business objectives and develop a cloud deployment strategy that aligns with your goals. Our collaborative approach ensures a smooth and successful transition to the cloud to help you maximize your cloud investment.
+              </p>
+              <a href="#contact" role="button" class="btn-rounded rounded-pill border-primary">
+                Find out more
+                <span><i class="fas fa-arrow-right"></i></span>
+              </a> </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+              <div class="services__pic">
+                <img src="/images/services/Data Processing.png" alt="Cloud computing Illustration" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- ? Testimonials -->
+
+    <section id="testimonials" class="testimonials">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff3da" fill-opacity="1" d="M0,32L48,42.7C96,53,192,75,288,112C384,149,480,203,576,208C672,213,768,171,864,176C960,181,1056,235,1152,250.7C1248,267,1344,245,1392,234.7L1440,224L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+      <div class="container">
+        <div class="row text-center text-white">
+          <h1 class="display-3 fw-bold">Testimonials</h1>
+          <div class="heading-line-dark mt-1 mb-1"></div>
+          <p class="lead mb-5 pt-1">What people are saying</p>
+        </div>
+
+        <!-- ? Carousel -->
+
+        <div class="row align-items-center">
+          <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-inner">
+              <!-- ? Carousel item 1 -->
+              <div class="carousel-item active">
+                <!-- ? Testim. card -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    Bhai maza agya usme bhot tagdi bana di tune unexpected maza agya
+                    <i class="fas fa-quote-right"></i>
+                    <div class="ratings p-1">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </p>
+                </div>
+                <!-- ? Client pic -->
+                <div class="testimonials__picture">
+                  <img src="/images/clients/privacy-client.webp" alt="client-1" class="img-fluid rounded-circle bg-white">
+                </div>
+                <!-- ? Client name and role -->
+                 <div class="testimonials__name">
+                  <h3>B. Sachdeva</h3>
+                  <p class="fw-light">Co-owner @ A. handlooms</p>
+                 </div>
+              </div>
+              
+              <!-- ? Carousel item 2 -->
+              <div class="carousel-item">
+                <!-- ? Testim. card -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus minima aut omnis in delectus nisi perferendis, odit nam, non fugiat laborum!
+                    <i class="fas fa-quote-right"></i>
+                    <div class="ratings p-1">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </p>
+                </div>
+                <!-- ? Client pic -->
+                <div class="testimonials__picture">
+                  <img src="/images/clients/client-2.png" alt="client-2" class="img-fluid rounded-circle">
+                </div>
+                <!-- ? Client name and role -->
+                 <div class="testimonials__name">
+                  <h3>Placeholder</h3>
+                  <p class="fw-light">CEO @ Some Pvt. ltd.</p>
+                 </div>
+              </div>
+            
+              <!-- ? Carousel item 3 -->
+              <div class="carousel-item">
+                <!-- ? Testim. card -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus minima aut omnis in delectus nisi perferendis, odit nam, non fugiat laborum!
+                    <i class="fas fa-quote-right"></i>
+                    <div class="ratings p-1">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </p>
+                </div>
+                <!-- ? Client pic -->
+                <div class="testimonials__picture">
+                  <img src="/images/clients/client-3.png" alt="client-3" class="img-fluid rounded-circle">
+                </div>
+                <!-- ? Client name and role -->
+                 <div class="testimonials__name">
+                  <h3>Placeholder</h3>
+                  <p class="fw-light">Freelancer @ Website</p>
+                 </div>
+              </div>
+              
+              <!-- ? Carousel item 4 -->
+              <div class="carousel-item">
+                <!-- ? Testim. card -->
+                <div class="testimonials__card">
+                  <p class="lh-lg">
+                    <i class="fas fa-quote-left"></i>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus minima aut omnis in delectus nisi perferendis, odit nam, non fugiat laborum!
+                    <i class="fas fa-quote-right"></i>
+                    <div class="ratings p-1">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </p>
+                </div>
+                <!-- ? Client pic -->
+                <div class="testimonials__picture">
+                  <img src="/images/clients/client-4.png" alt="client-4" class="img-fluid rounded-circle">
+                </div>
+                <!-- ? Client name and role -->
+                <div class="testimonials__name">
+                  <h3>Placeholder</h3>
+                  <p class="fw-light">Lead Designer @ Reputed LLP</p>
+                </div>
+              </div>
+            
+            </div>
+            <div class="text-center ml-1">
+              <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              </button>
+              <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff3da" fill-opacity="1" d="M0,192L26.7,197.3C53.3,203,107,213,160,208C213.3,203,267,181,320,160C373.3,139,427,117,480,112C533.3,107,587,117,640,138.7C693.3,160,747,192,800,176C853.3,160,907,96,960,96C1013.3,96,1067,160,1120,202.7C1173.3,245,1227,267,1280,261.3C1333.3,256,1387,224,1413,208L1440,192L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+    </section>
+
+    <!-- ? FAQ -->
+
+    <section id="faq" class="faq pt-5">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold">FAQ</h1>
+          <div class="heading-line"></div>
+          <p class="lead mb-5">
+            Get answers beforehand
+          </p>
+        </div>
+
+        <!-- ? Accordion -->
+         <div class="row mt-5">
+          <div class="col-md-12">
+            <div class="accordion" id="accordionExample">
+              <!-- ? #1 -->
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    What is your Skillset?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>JavaScript, Bootstrap, and SCSS.</strong> I specialize in creating responsive and dynamic front-end websites using the Bootstrap framework. Customizations are efficiently implemented through JavaScript and SCSS.
+                  </div>
+                </div>
+              </div>
+              <!-- ? #2 -->
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    How quickly can you design/deploy?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>It depends on the project requirements.</strong> With all necessary information and assets provided, I can ensure a swift and efficient design and deployment process.
+                  </div>
+                </div>
+              </div>
+              <!-- ? #3 -->
+              <div class="accordion-item shadow mb-3">
+                <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    On which cloud provider do you operate?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <strong>AWS (Amazon Web Services).</strong> I have a few cloud badges to prove my mettle in particular services and always strive to gain more knowledge. I also have experience with Google Cloud Platform (GCP) and Microsoft Azure. My expertise includes deploying scalable applications, managing cloud resources, and ensuring high availability and security.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- ? The portfolio -->
+      <section id="portfolio" class="portfolio">
+        <div class="container">
+          <div class="row text-center mt-5">
+            <h1 class="display-3 fw-bold">Portfolio</h1>
+            <div class="heading-line"></div>
+            <p class="lead mb-5">
+              These are all my projects ranging from personal to freelance.
+            </p>
+          </div>
+          <!-- Filter-buttons -->
+
+          <div class="row mt-5 mb-4 text-center">
+            <div class="col-md-12 filter-buttons">
+              <button class="btn btn-outline-primary" type="button">All</button>
+              <button class="btn btn-outline-primary" type="button">Websites</button>
+              <button class="btn btn-outline-primary" type="button">Design</button>
+              <button class="btn btn-outline-primary" type="button">Mockup</button>
+            </div>
+          </div>
+          <!-- Content -->
+           <div class="row">
+            <div class="col-xl-12 mb-3">
+              <div class="portfolio-box shadow">
+                <img src="images/portfolio-images/Loomora-1.png" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Loomora</h4>
+                    <p>Design and Development</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 mr-3 mb-3">
+              <div class="portfolio-box-small shadow">
+                <img src="images/portfolio-images/aws-academy-graduate-aws-academy-cloud-foundations.png" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Placeholder</h4>
+                    <p>Project category</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 pl-3">
+              <div class="portfolio-box-small shadow">
+                <img src="images/portfolio-images/portfolio-3.jpg" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
+                <div class="portfolio-info">
+                  <div class="caption">
+                    <h4>Placeholder</h4>
+                    <p>Project category</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- ? Get started -->
+  
+    <section id="contact" class="get-started">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="display-3 fw-bold text-capitalize">
+            Get started
+          </h1>
+          <div class="heading-line"></div>
+          <p class="lh-lg">Get a free consultation. Contact me now.</p>
+        </div>
+
+        <!-- Call to action -->
+        <div class="row text-white shadow">
+          <div class="col-12 col-lg-6 gradient shadow p-3">
+            <div class="cta-info w-100">
+              <h4 class="display-4 fw-bold text-capitalize">
+                100% satisfaction guaranteed
+              </h4>
+              <p class="lh-lg">Whatever you need me to get done, just let me know in this Start Your Project form. This just might be the first step towards your success and making your vision manifest into reality. Submit Now!</p>
+              <h3 class="display-3--brief">What will be the next step?</h3>
+                <ul class="cta-info__list">
+                  <li><span><i class="fa-solid fa-circle-check fa-beat"></i></span>I'll prepare the proposal</li>
+                  <li><span><i class="fa-solid fa-circle-check fa-beat"></i></span>Let's hear what you have in mind</li>
+                  <li><span><i class="fa-solid fa-circle-check fa-beat"></i></span>I'll refine it and present the design</li>
+                </ul>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 bg-white shadow p-3">
+            <div class="form w-100 pt-2">
+              <h4 class="display-3--title mb-5">Start your project</h4>
+              <form action="#" class="row" id="inputForm">
+                <div class="col-lg-12 col-md-12 mb-3"><input type="text" placeholder="Full Name" id="inputName" class="form-control shadow form-control-lg" required>
+                </div>
+                
+                <div class="col-lg-12 mb-3"><input type="email" placeholder="Email address" id="inputEmail" class="form-control shadow form-control-lg" required>
+                
+                </div>
+                
+                <div class="col-lg-12 mb-3"><input type="text" placeholder="Subject" id="inputSubject" class="form-control shadow form-control-lg" required>
+                
+                </div>
+                
+                <div class="col-lg-12 mb-3"><textarea name="message" placeholder="Directives" rows="8" class="form-control shadow form-control-lg" id="message" required></textarea></div>
+
+                <div class="text-center d-grid mt-1">
+                  <button type="button" class="btn btn-primary rounded-pill pt-3 pb-3" data-bs-toggle="modal" data-bs-target="#successModal" onclick="sendMail()">
+                    Submit
+                    <i class="fas fa-envelope ml-1"></i>
+                  </button>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ?? Footer -->
+
+    <footer class="footer">
+      <div class="footer-sm" style="background-color: #212121;">
+        <div class="container">
+          <div class="row py-4 text-center text-white">
+            <div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+              Connect with me
+            </div>
+            <div class="col-lg-7 col-md-6">
+              <a href="https://linkedin.com/in/divyom-chaudhary"><i class="fab fa-linkedin"></i></a>
+              <a href="https://github.com/DivyomChaudhary"><i class="fab fa-github"></i></a>
+              <a href="https://t.me/confidenial"><i class="fab fa-telegram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mt-5">
+        <div class="row text-white justify-content-center mt-3 pb-3">
+          <div class="col-12 col-sm-6 col-lg-6 mx-auto">
+            <h5 class="text-capitalize fw-bold">
+              My portfolio
+            </h5>
+            <hr class="bg-white d-inline-block mb-4" style="width: 150px; height: 2px;">
+            <p class="lh-lg">
+              Connect with me, view my work or just give constructive <a href="mailto:divyomchaudhary@gmail.com"><span>feedback</span></a> on the design!
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 mb-4 text-white mx-auto">
+            <h5 class="text-capitalize fw-bold">Products</h5>
+            <hr class="bg-white d-inline-block mb-4" style="width: 85px; height: 2px;">
+            <ul class="list-inline company-list">
+              <li><a href="#portfolio">Web development</a></li>
+              <li><a href="#portfolio">Design</a></li>
+              <li><a href="#portfolio">Cloud deployment</a></li>
+              <li><a href="mailto:divyomchaudhary@gmail.com?subject=Propose%20Collaboration&body=Hello%20Divyom,%0D%0A%0D%0AI%20have%20an%20idea%20that%20you%20should%20know.%0D%0A%0D%0AThank%20you.">Collaborate</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 mb-4 text-white mx-auto">
+            <h5 class="text-capitalize fw-bold">Useful Links</h5>
+            <hr class="bg-white d-inline-block mb-4" style="width: 120px; height: 2px;">
+            <ul class="list-inline company-list">
+              <li><a href="https://wa.me/+917037211292?text=Congratulations,%20Divyom%20I%20have%20an%20opportunity%20for%20you%20!">Refer me</a></li>
+              <li><a href="https://t.me/confidenial">Promote your content</a></li>
+              <li><a href="https://wa.me/+917037211292?text=Hello,%20I%20have%20a%20question%20about%20your%20services.">Need Help?</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-2 mb-4 text-white mx-auto">
+            <h5 class="text-capitalize fw-bold">Contacts</h5>
+            <hr class="bg-white d-inline-block mb-4" style="width: 85px; height: 2px;">
+            <ul class="list-inline company-list">
+              <li><a href="https://t.me/confidenial">Telegram</a></li>
+              <li><a href="https://wa.me/7037211292?text=Hello,%20I%20came%20from%20your%20portfolio.%20I%20am%20">Whatsapp</a></li>
+              <li><a href="https://calendly.com/divyomchaudhary/30min">Schedule a call</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ?? Copyright info -->
+      <div class="footer-bottom pt-4 pb-4">
+        <div class="container">
+          <div class="row text-center text-white">
+            <div class="col-12">
+              <div class="footer-bottom__copyright">
+                &COPY; 2025-present <a href="#">DC</a> | Created by <a href="#">Divyom Chaudhary</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</footer>
+
+<a href="#" class="shadow btn-primary rounded-circle back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</a>
+
+    <script src="/assets/js/bootstrap.bundle.js"></script> 
+    <script src="/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+  <script src="jquery/dist/jquery.slim.min.js"></script>  <script src="popper.js/dist/umd/popper.min.js"></script> <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

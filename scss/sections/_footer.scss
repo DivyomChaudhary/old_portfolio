@@ -1,0 +1,97 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+footer{
+    display: block;
+    position: relative;
+}
+
+.footer{
+    background-color: $footer;
+}
+
+//Social content
+.footer-sm{
+    a{
+        color: $white;
+
+        i{
+            font-size: 1rem;
+            margin-left: 1rem;
+
+            @include media-breakpoint-up(sm){
+            font-size: 1.8rem;
+            }
+        }
+    }
+}
+
+.company-list{
+    display: block;
+    list-style-type: none;
+    position: relative;
+
+    li{
+        margin-bottom: 0.5rem;
+        a{
+            color: $white;
+            text-decoration: none;
+
+            &:hover{
+                color: $tertiary;
+                transition: color 0.5s ease-in-out;
+            }
+        }
+    }
+}
+
+.footer-bottom{
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__copyright{
+        color: $gray-600;
+        font-weight: 400;
+
+        a{
+            color: $gray-300;
+            text-decoration: none;
+
+            &:hover{
+                color: $tertiary;
+                transition: color 0.5s ease-in-out;
+            }
+        }
+    }
+}
+
+// Back to top button
+.back-to-top{
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.875rem;
+    bottom: 1.875rem;
+    z-index: 9999;
+    background-color: $primary;
+    color: white;
+    @include transitionNew;
+
+    &:hover{
+        @include gradient;
+        transition: background-color 0.5s ease-in-out;
+        color: $white;
+    }
+
+    i{
+        color: $white;
+        font-size: 1rem;
+        @include absoluteCenter;
+    }
+}
+
+a{
+    text-decoration: none;
+}

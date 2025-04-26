@@ -1,0 +1,13 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.routes{
+    a{  
+        position: relative;
+        top: 1.5rem;
+        text-decoration: none;
+        i{
+            padding-left: 0.875rem;
+        }
+    }
+}

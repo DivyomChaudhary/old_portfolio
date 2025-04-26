@@ -1,0 +1,133 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+@use '../components/animations' as *;
+
+.intro-section{
+    @include gradient;
+    padding: 7rem 0 0 0;
+    width: 100%;
+    height: 100%;
+    @include media-breakpoint-down(lg){
+        padding: 3rem 0 0 0;
+    }
+
+    a{
+        text-decoration: none;
+        i{
+            padding-left: 0.875rem;
+        }
+    }
+
+}
+
+.intros{
+    
+    @include media-breakpoint-down(lg){
+        margin-top: 3rem;
+    }
+}
+.display-2--description{
+    margin-bottom: 3rem;
+    @include media-breakpoint-down(xl){
+        margin-bottom: 4rem;
+    }
+}
+
+.animation-box{
+    margin-left: 3rem;
+    display: flex;
+    width:initial;
+    height: 70vh;
+    width: 90.5%;
+    position: relative; 
+}
+
+.gliding-text-1 {
+    position: absolute;
+    left: 0px; /* Start- Left of the screen */
+    transition: right 1s ease-in-out; /* Smoother transition */
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-size: 2rem;
+}
+
+.gliding-text-2 {
+    position: absolute;
+    top: 5rem;
+    left: 0px; 
+    transition: right 1s ease-in-out; 
+    white-space: nowrap; 
+    font-size: 2rem;
+}
+
+.gliding-text-3 {
+    position: absolute;
+    top: 9rem;
+    left: 0px; 
+    transition: right 1s ease-in-out; 
+    white-space: nowrap; 
+    font-size: 2rem;
+}
+
+.gliding-text-4 {
+    position: absolute;
+    top: 13rem;
+    left: 0px; 
+    transition: right 1s ease-in-out; 
+    white-space: nowrap; 
+    font-size: 2rem;
+}
+
+.gliding-text-5 {
+    position: absolute;
+    top: 17rem;
+    left: 0px; 
+    transition: right 1s ease-in-out; 
+    white-space: nowrap; 
+    font-size: 2rem;
+}
+
+.gliding-text-6 {
+    position: absolute;
+    top: 21rem;
+    left: 0px; 
+    transition: right 1s ease-in-out; 
+    white-space: nowrap; 
+    font-size: 2rem;
+}
+
+.gliding-text-7 {
+    position: absolute;
+    top: 25rem;
+    left: 0px; 
+    transition: right 1s ease-in-out;
+    white-space: nowrap; 
+    font-size: 2rem;
+}
+
+.gliding-text-4.animate {
+    animation: slideInMain 1s ease-in-out forwards; /* forwards keeps the final state */
+}
+
+.gliding-text-1.animate {
+    animation: slideIn-1 1s ease-in-out forwards; /* forwards keeps the final state */
+}
+
+.gliding-text-2.animate {
+    animation: slideIn-2 1s ease-in-out forwards; /* forwards keeps the final state */
+}
+
+.gliding-text-3.animate {
+    animation: slideIn-3 1s ease-in-out forwards; /* forwards keeps the final state */
+}
+
+.gliding-text-7.animate {
+    animation: slideIn-1 1s ease-in-out forwards; /* forwards keeps the final state */
+}
+
+.gliding-text-6.animate {
+    animation: slideIn-2 1s ease-in-out forwards; /* forwards keeps the final state */
+}
+
+.gliding-text-5.animate {
+    animation: slideIn-3 1s ease-in-out forwards; /* forwards keeps the final state */
+}

@@ -1,0 +1,12 @@
+nav div ul button {
+    background-color: #fff3da;
+  }
+  nav div ul button:hover {
+    background-color: #543A14;
+    transition: all 0.45s ease-in-out;
+    color: white;
+  }
+  .navbar-toggler-icon {
+    background-image: url("/images/incognito.svg");
+  }
+  

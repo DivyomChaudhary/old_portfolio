@@ -1,0 +1,56 @@
+@use '../custom' as *;
+
+.services{
+    position: relative;
+    padding: 3rem 0;
+
+    @include media-breakpoint-down(lg){
+        .border-right{
+            border-right: 0rem solid $gray-300;
+        }
+    }
+
+    &__content{
+        padding: 1rem;
+        margin-top: 0rem;
+
+        a{  
+            position: relative;
+            top: 1.5rem;
+            text-decoration: none;
+            i{
+                padding-left: 0.875rem;
+            }
+        }
+
+        p{
+            font-size: 0.8rem;
+
+            @include media-breakpoint-up(lg){
+                font-size: 1rem;
+            }
+        }
+
+        @include media-breakpoint-down(lg){
+            .icon{
+                display: block;
+            }
+        }
+
+        @include media-breakpoint-up(lg){
+            margin-top: 5rem;
+        }
+
+        .icon{
+            font-size: 1.5rem;
+            color: $primary;
+
+            @include media-breakpoint-up(lg){
+                font-size: 2.5rem;
+            }
+        }
+    }
+    &__pic{
+        max-width: 100%;
+    }
+}
